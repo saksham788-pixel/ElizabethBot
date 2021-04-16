@@ -36,15 +36,17 @@ from Elizabeth.sample_config import Config
 
 
 class Development(Config):
-    OWNER_ID = 1584907723   # my telegram ID
-    OWNER_USERNAME = "mr_srlock"  # my telegram username
-    API_KEY = "your bot api key"  # my api key, as provided by the botfather
+    OWNER_ID = 1308628659   # my telegram ID
+    OWNER_USERNAME = "Sak_Anya"  # my telegram username
+    API_KEY = "1708244564:AAGCdfCHgKVILpcVSf2r2lP-bdaizVh8m30"  # my api key, as provided by the botfather
     SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
-    MESSAGE_DUMP = '-1234567890' # some group chat that your bot is a member of
+    MESSAGE_DUMP = '-1464280498' # some group chat that your bot is a member of
     USE_MESSAGE_DUMP = True
-    SUDO_USERS = []  # List of id's for users which have sudo access to the bot.
+    SUDO_USERS = [1797179225 1521131774 1406657231 1612881302]  # List of id's for users which have sudo access to the bot.
     LOAD = []
     NO_LOAD = ['translation']
+    WHITELIST_USERS = []
+    BAN_STICKER = [https://telegra.ph/file/49b47668dd9e8ba274cb6.jpg]
 ```
 
 If you can't have a config.py file (EG on heroku), it is also possible to use environment variables.
@@ -124,7 +126,7 @@ By default, YOUR_HOST should be 0.0.0.0:5432.
 
 You should now be able to build your database URI. This will be:
 
-`sqldbtype://username:pw@hostname:port/db_name`
+`sqldbtype://EmmaAGroup_bot:pw@Saksham:port/postgres`
 
 Replace sqldbtype with whichever db youre using (eg postgres, mysql, sqllite, etc)
 repeat for your username, password, hostname (localhost?), port (5432?), and db name.
